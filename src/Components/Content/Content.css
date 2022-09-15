@@ -1,0 +1,27 @@
+.content{
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(250, 89, 89);
+}
+.title  
+{  
+        margin-bottom: 20px;  
+        padding:20px  
+}  
+.img  
+{  
+        height: 260px;width:100%  
+} 
+
+
+.section__intro__main.intro-heading {
+    color: white;
+    text-align: center;
+    margin: auto 0;
+}
+ 

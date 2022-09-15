@@ -1,0 +1,47 @@
+nav {
+    position: sticky;
+    top: 0;
+}
+.content-search{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white ;
+    font-size: small;
+    min-width: 330px;
+    border-bottom: 2px solid white;
+}
+
+
+
+.invertedcolor{
+    color: black;
+
+}
+
+
+
+.invertedcolor::placeholder{
+  color: black;
+
+}
+
+
+
+.navbar {
+    box-shadow: none !important;
+    padding-top: 0.5625rem;
+}
+
+
+
+
+/* #heading{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white ;
+    font-size: small;
+    min-width: 330px;
+    border-bottom: 2px solid white;
+} */
