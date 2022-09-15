@@ -9,6 +9,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
+import Landing from '../../Components/Landing/Landing';
+import Content from '../../Components/Content/Content';
 
 export default function NavBar() {
 
@@ -27,18 +29,19 @@ export default function NavBar() {
   return (
     <>
       <Navbar bg="transparent" variant="dark" fixed="top"   >
-        <Container id="heading">
-          <div className='content-search' >Travel Nation</div>
+        <Container>
+          <div className='heading' >Travel Nation</div>
           <div className="me-auto ms-5">
             <i className="fa-solid fa-magnifying-glass me-2 mt-1"></i>
-            <input className='content-search' id="heading" type={'text'} placeholder="Search Destinations, Tours, Activities " />
+            <input className='content-search' type={'text'} placeholder="Search Destinations, Tours, Activities " />
           </div>
           <Nav className='ms-auto'>
             <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      
+    
+
     </>
   )
 }

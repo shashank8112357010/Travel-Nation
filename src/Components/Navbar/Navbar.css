@@ -45,3 +45,9 @@ nav {
     min-width: 330px;
     border-bottom: 2px solid white;
 } */
+
+.heading{
+    border: none;
+    color: white;
+    /* background-color: white; */
+}

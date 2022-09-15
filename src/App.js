@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Landing from './Components/Landing/Landing';
 import NavBar from './Components/Navbar/Navbar';
-import Content from './Components/Content/Content';
 import Login from './Components/Login/Login';
-import ImgtoTest from './Components/Task/ImgtoTest';
 import { BrowserRouter, Route, Routes  } from 'react-router-dom';
+import Landing from './Components/Landing/Landing';
+import Content from './Components/Content/Content';
 
 function App() {
   return (
@@ -18,10 +17,11 @@ function App() {
             <Landing />
             <Landing />
           </Route> */}
-          <Route path='' element={<>
+          <Route path='/' exact element={<>
             <NavBar/> 
-            <Landing />
-            <Content />
+
+              <Landing />
+      <Content />
 
           </>   } />
 

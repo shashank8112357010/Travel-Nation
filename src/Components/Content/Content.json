@@ -1,0 +1,49 @@
+{
+    "BestOfIndia": [
+        {
+            "Place": "Kasol",
+            "Img": "",
+            "discription": "Best place to hangout"
+        },
+        {
+            "Place": "Kedarnath",
+            "Img": "",
+            "discription": "Holi Lord shiva place"
+        },
+        {
+            "Place": "Badrinath",
+            "Img": "",
+            "discription": "Holi Lord vishnu place"
+        },
+        {
+            "Place": "Tajmahal",
+            "Img": "",
+            "discription": "One of the 7 wonders "
+        },
+        {
+            "Place": "Amarnath",
+            "Img": "",
+            "discription": "Holi Lord shiva place"
+        },
+        {
+            "Place": "Nanital",
+            "Img": "",
+            "discription": "City of lakes"
+        },
+        {
+            "Place": "Banaras",
+            "Img": "",
+            "discription": "Famous for pan"
+        },
+        {
+            "Place": "Delhi",
+            "Img": "",
+            "discription": "Capital  of india"
+        },
+        {
+            "Place": "kashmir",
+            "Img": "",
+            "discription": "heaven of earth"
+        }
+    ]
+}
