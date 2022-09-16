@@ -63,6 +63,20 @@ function Login() {
     })
 
   }
+  const forgetpassword=(e)=>{
+    e.preventDefault()
+    axios.post('http://localhost:8000/user/forget-password',{email:email},{ headers: {
+      'Content-Type': 'application/json'
+    }}).then((res)=>{ 
+      if(res.data.success){
+         setJustifyActive('tab1')
+         navigate('/login')
+         setForgetScreen(false)
+      console.log("response from forget api ==============>",res)
+
+        }
+    })
+  }
 
   const handleJustifyClick = (value) => {
     if (value === justifyActive) {
@@ -72,18 +86,8 @@ function Login() {
     setJustifyActive(value);
   };
 
-
-const ForgetOtp=()=>{
-
-}
-
-
   return (
-
-
     <>
-
-
       <div className='main-bg-img'>
         <MDBContainer>
           <div className='wrapper'>
@@ -106,7 +110,6 @@ const ForgetOtp=()=>{
                 </MDBTabsItem>
               </MDBTabs>
             }
-         
               <MDBTabsContent>
                 <MDBTabsPane show={justifyActive === 'tab1' && ForgetScreen === false}>
                   <div className="text-center mb-3">
@@ -127,8 +130,9 @@ const ForgetOtp=()=>{
                     </div>
                     <p className="text-center mt-3">or:</p>
                   </div>
-                  <MDBInput wrapperClass='mb-4' label='Email address' onChange={(e) => setemail(e.target.value)} id='form1' type='email' />
-                  <MDBInput wrapperClass='mb-4' label='Password' id='form2' onChange={(e) => setpassword(e.target.value)} type='password' />
+                  <MDBInput wrapperClass='mb-4' role="presentation" autocomplete="off"  label='Email address' onChange={(e) => setemail(e.target.value)} id='form1' type='email' />
+                  <MDBInput wrapperClass='mb-4' autocomplete="off" label='Password' id='form2' onChange={(e) => setpassword(e.target.value)} type='password' />
+                 
                   <div className="d-flex justify-content-between mx-4 mb-4">
                     <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
                     <div style={{cursor:"pointer"}}  onClick={e=>setForgetScreen(true)}>Forgot password?</div>
@@ -136,23 +140,18 @@ const ForgetOtp=()=>{
                   <MDBBtn className="mb-4 w-100" onClick={e => Login(e)} >Sign in</MDBBtn>
                 </MDBTabsPane>
                 <MDBTabsPane show={justifyActive === 'tab2' && ForgetScreen === false}>
-
                   <div className="text-center mb-3">
                     <p>Sign un with:</p>
-
                     <div className='d-flex justify-content-between mx-auto' style={{ width: '40%' }}>
                       <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
                         <MDBIcon fab icon='facebook-f' size="sm" />
                       </MDBBtn>
-
                       <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
                         <MDBIcon fab icon='twitter' size="sm" />
                       </MDBBtn>
-
                       <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
                         <MDBIcon fab icon='google' size="sm" />
                       </MDBBtn>
-
                       <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#1266f1' }}>
                         <MDBIcon fab icon='github' size="sm" />
                       </MDBBtn>
@@ -165,9 +164,7 @@ const ForgetOtp=()=>{
                   <MDBInput wrapperClass='mb-4' label='Password' onChange={(e) => setpassword(e.target.value)} type='password' />
                   <MDBBtn className="mb-4 w-100" onClick={e => Sinup(e)} >Sign up</MDBBtn>
                 </MDBTabsPane>
-
                 <MDBTabsPane show={ForgetScreen === true}>
-
                 <MDBTabs pills justify   className='mb-3 d-flex flex-row justify-content-between'>
                 <MDBTabsItem>
                   <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
@@ -180,22 +177,18 @@ const ForgetOtp=()=>{
                   </MDBTabsLink>
                 </MDBTabsItem>
               </MDBTabs>
-
-
               <div  style={{fontSize:"30px" }} className="text-primary mt-4 d-flex justify-content-start ms-1">
                 Forget Password
               </div>
                   <div className='mt-5 pt-5 '>
-                  <div style={{fontSize:"10px" }} className="text-danger d-flex justify-content-start">
+                  <MDBInput wrapperClass='mb-1' label='Email' className='' onChange={(e) => setemail(e.target.value)} type='email' />
+                  <div style={{fontSize:"10px" }} className="text-danger d-flex justify-content-start mb-5">
                   *Enter Regestered Email Address
                   </div>
-                  <MDBInput wrapperClass='mb-4' label='Email' className='mb-5' onChange={(e) => setemail(e.target.value)} type='email' />
-                  <MDBBtn className="mb-4 w-100" onClick={e => ForgetOtp(e)} >Send OTP</MDBBtn>
+                  <MDBBtn className="my-5 w-100 " onClick={e => forgetpassword(e)} >Send OTP</MDBBtn>
                   </div>
-           
                 </MDBTabsPane>
               </MDBTabsContent>
-
             </div>
           </div>
         </MDBContainer>

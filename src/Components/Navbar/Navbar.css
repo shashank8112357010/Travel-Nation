@@ -11,43 +11,29 @@ nav {
     min-width: 330px;
     border-bottom: 2px solid white;
 }
-
-
-
-.invertedcolor{
-    color: black;
-
+.content-search::placeholder{
+    color: white;
 }
-
-
-
-.invertedcolor::placeholder{
-  color: black;
-
-}
-
-
 
 .navbar {
     box-shadow: none !important;
     padding-top: 0.5625rem;
 }
-
-
-
-
-/* #heading{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: white ;
-    font-size: small;
-    min-width: 330px;
-    border-bottom: 2px solid white;
-} */
-
-.heading{
-    border: none;
+#logo{
+    font-size: larger;
     color: white;
-    /* background-color: white; */
+}
+.invertedNav{
+    font-size: larger;
+    color: black !important;
+}
+.invertedNav::placeholder{
+    color: black !important;
+}
+.nav-bar-inverted{
+color: black;
+}
+
+.nav-bar{
+   background-color: white!important;
 }
