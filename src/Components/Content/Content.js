@@ -11,6 +11,20 @@ import kerala from '../../assets/bestofindia/kerala.jpg'
 import Ladakh from '../../assets/bestofindia/ladkah.jpg'
 import nanital from '../../assets/bestofindia/nanital.jpg'
 import tajmaghal from '../../assets/bestofindia/tajmahal.jpg'
+import explore1 from '../../assets/explore/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg'
+import explore2 from '../../assets/explore/dino-reichmuth-A5rCN8626Ck-unsplash.jpg'
+import explore3 from '../../assets/explore/vincentiu-solomon-R86bzJSneuw-unsplash.jpg'
+// import explore4 from '../../assets/explore/andrew-neel-z55CR_d0ayg-unsplash.jpg '
+
+import explore5 from '../../assets/explore/jakob-owens-MctEgCk1Dm0-unsplash.jpg'
+
+
+
+
+
+
+import Carousel from 'react-bootstrap/Carousel';
+
 
 
 
@@ -300,6 +314,81 @@ export default function Content() {
           </div>
         </div>
 
+      </div>
+      <div className='container explore' style={{ marginTop: "70px" }}>
+        <div className='row'>
+
+          <div className='col-12'>
+            <Carousel fade={true} >
+              <Carousel.Item interval={1000}  style={{border:"1px transparent", borderRadius:"20px"}}>
+                <img
+                  className="d-block w-100"
+                  src={explore1}
+                  style={{ height: "380px", borderRadius: "10" }}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={500}  style={{border:"1px transparent", borderRadius:"20px"}}>
+                <img
+                  className="d-block w-100"
+                  src={explore2}
+                  style={{ height: "380px", borderRadius: "10" }}
+                  alt="Second slide"
+                />
+                <Carousel.Caption>
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item  interval={500} style={{border:"1px transparent", borderRadius:"20px"}}>
+                <img
+                  className="d-block w-100"
+                  src={explore3}
+                  style={{ height: "380px", borderRadius: "10" }}
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <h3>Third slide label</h3>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={500}  style={{border:"1px transparent", borderRadius:"20px"}}>
+                <img
+                  className="d-block w-100"
+                  src={explore2}
+                  style={{ height: "380px", borderRadius: "10" }}
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <h3>Third slide label</h3>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item  style={{border:"1px transparent", borderRadius:"20px"}} interval={500}>
+                <img
+                  className="d-block w-100"
+                  src={explore5}
+                  style={{ height: "380px", borderRadius: "10" }}
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <h3>Third slide label</h3>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+        </div>
       </div>
     </>
   )

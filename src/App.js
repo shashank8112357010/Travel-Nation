@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 import Landing from './Components/Landing/Landing';
 import Content from './Components/Content/Content';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
 

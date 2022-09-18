@@ -26,12 +26,12 @@ export default function NavBar() {
     <>
     <div >
 
-      <Navbar id='nav-bar'  variant="dark" fixed="top"   >
+      <Navbar id='nav-bar'  fixed="top"   >
         <Container>
           <div id='logo'>Travel Nation</div>
           <div className="me-auto ms-5">
             <i className="fa-solid fa-magnifying-glass me-2 mt-1"></i>
-            <input className='content-search' id='logo' type={'text'}  placeholder="Search Destinations, Tours, Activities " />
+            <input className='content-search fs-6' id='logo' type={'text'}  placeholder="Search Destinations, Tours, Activities " />
           </div>
           <Nav className='ms-auto  '>
             <a  href="/login" ><div id='logo'>Login</div></a>
