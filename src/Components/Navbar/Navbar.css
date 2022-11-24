@@ -6,13 +6,13 @@ nav {
     background-color: transparent;
     border: none;
     outline: none;
-    color: white ;
+    color: white!important ;
     font-size: small;
     min-width: 330px;
     border-bottom: 2px solid white;
 }
 .content-search::placeholder{
-    color: white;
+    color: white!important;
 }
 
 .navbar {
